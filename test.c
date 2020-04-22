@@ -23,6 +23,7 @@ void run_test()
     int percent = nb_funcTestValid*100/nb_funcTest;
     printf("\nRéussite : %d %% \n\n",percent);
     printf("----Fin----\n\n");
+    printf("----au revoir----\n\n");
 }
 
 void test_createString()
