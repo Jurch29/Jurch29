@@ -3,48 +3,55 @@
 
 char *createString(char *string)
 {
-    /* à implémenter */
+    /*Renvoie la chaîne passé en paramètre (comme une affecation simple)*/
+    // à implémenter
     return NULL;
 }
 
 int sizeString(char *string)
 {
-    /* à implémenter */
+    /*Renvoie la taille de la chîne*/
+    // à implémenter
     return NULL;
 }
 
-char *copyString(char *stringCopied,char *stringToCopy)
+void copyString(char *stringCopied,char *stringToCopy)
 {
-    /* à implémenter */
-    return NULL;
+    /*Copie stringToCopy dans stringCopied*/
+    // à implémenter
 }
 
 char *concatString(char *string1,char *string2)
 {
-    /* à implémenter */
+    /*Ajoute le contenu de string2 à la suite de string1*/
+    // à implémenter
     return NULL;
 }
 
 int compareString(char *string1,char *string2)
 {
-    /* à implémenter */
+    /*Compare string1 et string2, renvoie 0 si diffèrente et 1 si égale*/
+    // à implémenter
     return NULL;
 }
 
 int isCaracInString(char carac,char *string)
 {
-    /* à implémenter */
+    /*Recherche carac dans string, si il est présent il renvoie l'index de la première occurence sinon -1*/
+    // à implémenter
     return NULL;
 }
 
 int countCaracInString(char carac,char *string)
 {
-    /* à implémenter */
+    /*Compte le nombre d'occurence de carac dans string et renvoie le résultat*/
+    // à implémenter
     return NULL;
 }
 
 int searchStringInString(char *string1,char *string2)
 {
-    /* à implémenter */
+    /*Recherche si string2 est contenu dans string1 renvoie 1 si oui sinon 0*/
+    // à implémenter
     return NULL;
 }
