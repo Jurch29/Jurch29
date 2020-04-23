@@ -31,7 +31,7 @@ void test_createString()
     printf("createString() : ");
 
     char *string = createString("Je suis une chaine.");
-
+    
     if (string==NULL){
         printf("\033[31;1m Fail \033[0m (NULL value) \n");
         nb_funcTestValid--;
@@ -48,6 +48,7 @@ void test_createString()
             nb_funcTestValid--;
         }
     }
+    printf("le *string: %c\n",*string);
 }
 
 void test_sizeString()
