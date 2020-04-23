@@ -3,9 +3,19 @@
 
 char *createString(char *string)
 {
+    // int taille=0, copie[100],i=0;
+    // for (i=0;string[i]!='\O';++i)
+    // {
+    // taille=taille+1
+    // }
+    // i=0;
+    // for(i=0;i<=taille;++i)
+    // {
+    // copie[i]=string[i];
+    // }
     /*Renvoie la chaîne passé en paramètre (comme une affecation simple)*/
     // à implémenter
-    return NULL;
+    return string;
 }
 
 int sizeString(char *string)
