@@ -38,7 +38,7 @@ void test_createString()
     }
     else 
     {
-        if (string != NULL || strcmp(string, "Je suis une chaine.") == 0) // Si chaînes identiques
+        if (strcmp(string, "Je suis une chaine.") == 0) // Si chaînes identiques
         {
             printf("\033[32;1m Success \033[0m\n");
         }
