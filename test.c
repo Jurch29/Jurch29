@@ -38,7 +38,7 @@ void test_createString()
     }
     else 
     {
-        if (strcmp(string, "Je suis une chaine.") == 0) // Si chaînes identiques
+        if (string != NULL || strcmp(string, "Je suis une chaine.") == 0) // Si chaînes identiques
         {
             printf("\033[32;1m Success \033[0m\n");
         }
@@ -48,7 +48,6 @@ void test_createString()
             nb_funcTestValid--;
         }
     }
-    printf("le *string: %c\n",*string);
 }
 
 void test_sizeString()

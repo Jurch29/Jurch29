@@ -20,19 +20,51 @@ char *createString(char *string)
 
 int sizeString(char *string)
 {
-    /*Renvoie la taille de la chîne*/
+    int nombreDeCarateres=0;
+    char caractereActuel=0;
+    do
+    {   
+        caractereActuel=string[nombreDeCarateres];
+        nombreDeCarateres++;
+    } 
+    while (caractereActuel!='\0');
+    nombreDeCarateres--;
+    
+//  i=0;
+
+//  /*j'ai essayé avec une boucle for mais ça ne fonctionnait pas non plus*/
+
+//    while(string [i]!='\0')
+//    {
+//        i=i+1;
+//    }
+    /*Renvoie la taille de la chaîne*/
     // à implémenter
-    return NULL;
+    return nombreDeCarateres;
 }
 
 void copyString(char *stringCopied,char *stringToCopy)
 {
+    int i=0,nombreDeCaracteres=0;
+     char caractereActuel=0;
+    do
+    {   
+        caractereActuel=stringToCopy[nombreDeCarateres];
+        nombreDeCarateres++;
+    } 
+    while (caractereActuel!='\0');
+    nombreDeCarateres--;
+    for(i=0;i<=nombreDeCarateres;++i)
+    {
+        stringToCopy[i]=stringCopied[i];
+    }
     /*Copie stringToCopy dans stringCopied*/
     // à implémenter
 }
 
 char *concatString(char *string1,char *string2)
 {
+    
     /*Ajoute le contenu de string2 à la suite de string1*/
     // à implémenter
     return NULL;
