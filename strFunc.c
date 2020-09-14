@@ -29,15 +29,6 @@ int sizeString(char *string)
     } 
     while (caractereActuel!='\0');
     nombreDeCarateres--;
-    
-//  i=0;
-
-//  /*j'ai essayé avec une boucle for mais ça ne fonctionnait pas non plus*/
-
-//    while(string [i]!='\0')
-//    {
-//        i=i+1;
-//    }
     /*Renvoie la taille de la chaîne*/
     // à implémenter
     return nombreDeCarateres;
