@@ -3,6 +3,8 @@
 #include "test.h"
 #include "strFunc.h"
 
+#define MAXSIZE 100
+
 int nb_funcTest = 8;
 int nb_funcTestValid;
 
@@ -10,7 +12,6 @@ void run_test()
 {
     printf("\n----Demarage du module test de strProject----\n\n");
     nb_funcTestValid = nb_funcTest;
-
     test_createString();
     test_sizeString();
     test_copyString();
@@ -76,7 +77,7 @@ void test_sizeString()
 void test_copyString()
 {
     printf("copyString() : ");
-    char *stringCopied;
+    char stringCopied[MAXSIZE];
     char *stringToCopy = "le message a copier";
 
     copyString(stringCopied,stringToCopy);
@@ -101,18 +102,20 @@ void test_copyString()
 void test_concatString()
 {
     printf("concatString() : ");
-    char *string1 = "il était ";
-    char *string2 = "une fois";
-    char *finalString;
+    char string1[80] = "il était ";
+    char string2[80] = "une fois";
+    char finalString[MAXSIZE];
 
-    finalString = concatString(string1,string2);
+    concatString(string1,string2,finalString);
+    
     if (finalString==NULL){
         printf("\033[31;1m Fail \033[0m (NULL value) \n");
         nb_funcTestValid--;
     }
+
     else
     {
-        if (strcmp(finalString,strcpy(string1,string2))==0)
+        if (strcmp(finalString,strcat(string1,string2))==0)
         {
             printf("\033[32;1m Success \033[0m\n");
         }

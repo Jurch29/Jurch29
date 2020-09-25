@@ -4,7 +4,7 @@
 char *createString(char *string);
 int sizeString(char *string);
 void copyString(char *stringCopied,char *stringToCopy);
-char *concatString(char *string1,char *string2);
+void concatString(char *string1,char *string2,char *result);
 int compareString(char *string1,char *string2);
 int isCaracInString(char carac,char *string);
 int countCaracInString(char carac,char *string);
