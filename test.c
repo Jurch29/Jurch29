@@ -133,29 +133,22 @@ void test_compareString()
     char *string1 = "je suis *";
     char *string2 = "je suis";
 
-    int comparator = compareString(string1,string1);
-    if (comparator==NULL){
-        printf("\033[31;1m Fail \033[0m (NULL value) \n");
-        nb_funcTestValid--;
+    int comparator = compareString(string1,string2);
+    if (!comparator)
+    {
+        printf("\033[32;1m Success \033[0m\n");
     }
     else
     {
-        if (!comparator)
-        {
-            printf("\033[32;1m Success \033[0m\n");
-        }
-        else
-        {
-            printf("\033[31;1m Fail \033[0m\n");
-            nb_funcTestValid--;
-        }
+        printf("\033[31;1m Fail \033[0m\n");
+        nb_funcTestValid--;
     }
 }
 
 void test_isCaracInString()
 {
     printf("isCaracInString() : ");
-    char *string1 = "le petit navire est géniale ?!?";
+    char *string1 = "le petit navire est geniale ?!?";
     char carac = '?';
 
     int positionChar = isCaracInString(carac, string1);
@@ -205,7 +198,7 @@ void test_countCaracInString()
 void test_searchStringInString()
 {
     printf("searchStringInString() : ");
-    char *string1 = "je suis content!::.";
+    char *string1 = "salut, je suis content!::.";
     char *string2 = "je suis con";
 
     int isStrInStr = searchStringInString(string1,string2);
